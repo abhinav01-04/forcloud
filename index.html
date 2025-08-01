@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hand Cricket</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="css-border">
+    <div class="css-inner-text">
+      <h2 class="css-heading">Hand Cricket </h2>
+      <div id="first">
+        <button onclick="
+          playGame(1);
+        " class="css-button">1</button>
+        <button onclick="
+          playGame(2);
+        " class="css-button">2</button>
+        <button onclick="
+          playGame(3);
+        " class="css-button">3</button>
+      </div>
+      <div id="second">
+        <button onclick="
+          playGame(4);
+        " class="css-button">4</button>
+        <button onclick="
+          playGame(5);
+        " class="css-button">5</button>
+        <button onclick="
+          playGame(6);
+        " class="css-button">6</button>
+      </div>
+      <div id="third">
+        <button onclick="
+          playGame(7);
+        " class="css-button">7</button>
+        <button onclick="
+          playGame(8);
+        " class="css-button">8</button>
+        <button onclick="
+          playGame(9);
+        " class="css-button">9</button>
+      </div>
+      <div id="fourth">
+        <button onclick="
+          playGame(10);
+        " class="css-button">10</button>
+        <button onclick="
+          highestScore=0;
+          localStorage.removeItem('hs');
+          document.querySelector('.js-highestScore').innerHTML=`Highest Score:${highestScore}`;
+        " class="css-reset">Reset HighScore</button>
+      </div>
+
+      <p class="js-score css-score"></p>
+      <p class="js-pick css-pick"></p>
+      <p class="js-highestScore css-highestScore"></p>
+      <p class="js-congrats css-congrats"></p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
